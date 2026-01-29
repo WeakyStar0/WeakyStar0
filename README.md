@@ -60,8 +60,8 @@
 <hr>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WeakyStar0&theme=dark&show_icons=true&hide_border=true&count_private=true" />
+  <img width="35%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WeakyStar0&title_color=7952B3&text_color=ffffff&bg_color=0d1117&hide_border=true&layout=compact" />
   <br>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WeakyStar0&theme=dark&show_icons=true&hide_border=true&layout=compact" />
+  <img width="50%" src="https://github-readme-stats.vercel.app/api?username=WeakyStar0&show_icons=true&title_color=7952B3&icon_color=7952B3&text_color=ffffff&bg_color=0d1117&hide_border=true&count_private=true" />
   <p><br><i>"Create, experiment, and never stop learning."</i></p>
 </div>
