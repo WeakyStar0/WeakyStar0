@@ -1,51 +1,67 @@
-# ⭐ WeakyStar
+<h1 align="center">⭐ WeakyStar</h1>
 
----
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=7952B3&height=100&section=header&text=&fontSize=90" width="100%"/>
+</div>
 
-### 🚀 Mission Log
-- **Currently Orbiting:** Personal game projects and custom dev tools.
-- **Looking for Crew:** Open to collaborating on creative coding and game dev indie projects.
-- **The AI Frontier:** Experimenting with prompt engineering and training small neural nets.
+<h3 align="center">🚀 Mission Log</h3>
 
----
+<p align="center">
+   <b>Currently Orbiting:</b> Personal game projects and custom dev tools.<br>
+   <b>Looking for Crew:</b> Open to collaborating on creative coding and game dev indie projects.<br>
+   <b>The AI Frontier:</b> Experimenting with prompt engineering and training small neural nets.
+</p>
 
-### 🛠️ The Tech Constellation
+<h3 align="center">📡 Transmission</h3>
 
-**Core Engines & Logic**  
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+<div align="center">
+  <a href="mailto:marcl.gustavo.dias@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://github.com/WeakyStar0">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</div>
 
-**The Web Nebula (Frontend & Backend)**  
-![React](https://img.shields.io/badge/React-202327?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+<hr>
 
-**World Building & Dimensions (Game & 3D)**  
-![Unity](https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white) 
-![Blender](https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white) 
-![Blockbench](https://img.shields.io/badge/Blockbench-212121?style=for-the-badge&logo=blockbench&logoColor=38B5E1) 
-![Minecraft Modding](https://img.shields.io/badge/Minecraft%20Modding-Java%20Edition-ED8B00?style=for-the-badge&logo=minecraft&logoColor=white) 
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+<img align="right" width="50%" src="https://imgur.com/Qm8P8zA.png" />
 
-**Data & Infrastructure**  
-![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) 
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+<h3>🛠️ The Tech Constellation</h3>
 
-**Creative Studio (Design & Video)**  
-![Photoshop](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)
-![DaVinci Resolve](https://img.shields.io/badge/DaVinci%20Resolve-000000?style=for-the-badge&logo=davinciresolve&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=canva&logoColor=white)
+<b>Core Engines & Logic</b><br>
+<img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" />
+<br><br>
 
----
+<b>The Web Nebula</b><br>
+<img src="https://img.shields.io/badge/React-202327?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
+<img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
+<br><br>
 
-### 📡 Transmission
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:marcl.gustavo.dias@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/WeakyStar0)
+<b>World Building & Dimensions</b><br>
+<img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" />
+<img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white" />
+<img src="https://img.shields.io/badge/Blockbench-212121?style=for-the-badge&logo=blockbench&logoColor=38B5E1" />
+<img src="https://img.shields.io/badge/Minecraft-ED8B00?style=for-the-badge&logo=minecraft&logoColor=white" />
+<br><br>
 
-> *"Create, experiment, and never stop learning."*
+<b>Creative Studio</b><br>
+<img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" />
+<img src="https://img.shields.io/badge/DaVinci%20Resolve-000000?style=for-the-badge&logo=davinciresolve&logoColor=white" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+
+<br clear="right" />
+
+<hr>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=WeakyStar0&theme=dark&show_icons=true&hide_border=true&count_private=true" />
+  <br>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WeakyStar0&theme=dark&show_icons=true&hide_border=true&layout=compact" />
+  <p><br><i>"Create, experiment, and never stop learning."</i></p>
+</div>
