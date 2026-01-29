@@ -47,7 +47,7 @@
 <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" />
 <img src="https://img.shields.io/badge/Blender-F5792A?style=for-the-badge&logo=blender&logoColor=white" />
 <img src="https://img.shields.io/badge/Blockbench-212121?style=for-the-badge&logo=blockbench&logoColor=38B5E1" />
-<img src="https://img.shields.io/badge/Minecraft-ED8B00?style=for-the-badge&logo=minecraft&logoColor=white" />
+<img src="https://img.shields.io/badge/Minecraft%20Modding-ED8B00?style=for-the-badge&logo=minecraft&logoColor=white" />
 <br><br>
 
 <b>Creative Studio</b><br>
