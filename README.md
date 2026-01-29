@@ -64,3 +64,5 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WeakyStar0&title_color=7952B3&text_color=ffffff&bg_color=0d1117&hide_border=true&layout=compact" width="41.5%" />
   <p><br><i>"Create, experiment, and never stop learning."</i></p>
 </div>
+
+<p align="right"> <img src="https://komarev.com/ghpvc/?username=weakystar0&label=Profile%20views&color=7952B3&style=flat" alt="weakystar0" /> </p>
