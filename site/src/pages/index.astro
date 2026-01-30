@@ -1,2 +1,486 @@
-<h1>My Digital Portfolio</h1>
-<p>sybau</p>
+---
+import { Image } from "astro/components";
+import "../styles/global.css";
+import ProjectOverlay from "../components/ProjectOverlay.astro";
+
+const pageTitle = "Weaky";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{pageTitle}</title>
+
+        <!-- 1. GOOGLE FONTS -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- 2. DEVICON (For the colored logos) -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+    </head>
+    <body>
+        <ProjectOverlay />
+        <div class="nav-indicators">
+            <div class="dot active" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+            <div class="dot" data-index="5"></div>
+        </div>
+
+        <main class="snap-container">
+            <!-- SECTION 1: HERO -->
+            <section class="screen-section hero">
+                <div class="content">
+                    <h1>Weaky★</h1>
+                    <h2>Full Stack Developer & Creative</h2>
+                    <p class="quote">
+                        "Building the bridge between logic and imagination."
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 2: ABOUT ME -->
+            <section class="screen-section about">
+                <div class="content">
+                    <h2>About Me</h2>
+                    <p class="summary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 3: SKILLS -->
+            <section class="screen-section skills">
+                <div class="content">
+                    <h2>My Skills</h2>
+                    <h3>My Tech Constellation</h3>
+
+                    <div class="skills-wrapper">
+                        <!-- 1. Web Development -->
+                        <div class="skill-category">
+                            <h4>Web Development</h4>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <i class="devicon-html5-plain colored"
+                                    ></i><span>HTML5</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-css3-plain colored"
+                                    ></i><span>CSS3</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-bootstrap-plain colored"
+                                    ></i><span>Bootstrap</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-react-original colored"
+                                    ></i><span>React</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-astro-plain colored"
+                                    ></i><span>Astro</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-nodejs-plain colored"
+                                    ></i><span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Programming Languages -->
+                        <div class="skill-category">
+                            <h4>Languages</h4>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <i class="devicon-javascript-plain colored"
+                                    ></i><span>JS</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-csharp-plain colored"
+                                    ></i><span>C#</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-java-plain colored"
+                                    ></i><span>Java</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-dart-plain colored"
+                                    ></i><span>Dart</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 3. Databases -->
+                        <div class="skill-category">
+                            <h4>Databases</h4>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <i class="devicon-postgresql-plain colored"
+                                    ></i><span>Postgres</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-mongodb-plain colored"
+                                    ></i><span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. Creation Tools (Combined Design + Content) -->
+                        <div class="skill-category">
+                            <h4>Creation Tools</h4>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <i class="devicon-figma-plain colored"
+                                    ></i><span>Figma</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-photoshop-plain colored"
+                                    ></i><span>Photoshop</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-illustrator-plain colored"
+                                    ></i><span>Illustrator</span>
+                                </div>
+                                <div class="skill-card">
+                                    <Image
+                                        src="https://upload.wikimedia.org/wikipedia/commons/1/14/Clipstudiopaint_app_logo.png"
+                                        width={30}
+                                        height={30}
+                                        alt="CSP"
+                                    /><span>ClipStudioPaint</span>
+                                </div>
+                                <div class="skill-card">
+                                    <Image
+                                        src="https://cdn.simpleicons.org/davinciresolve/white"
+                                        width={30}
+                                        height={30}
+                                        alt="DaVinci"
+                                    /><span>DaVinci</span>
+                                </div>
+                                <div class="skill-card">
+                                    <Image
+                                        src="https://cdn.simpleicons.org/obsstudio/white"
+                                        width={30}
+                                        height={30}
+                                        alt="OBS"
+                                    /><span>OBS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 5. Game Dev & 3D -->
+                        <div class="skill-category">
+                            <h4>Game Dev & 3D</h4>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <Image
+                                        src="https://imgur.com/nUUwy3u.png"
+                                        width={30}
+                                        height={30}
+                                        alt="Unity"
+                                    /><span>Unity</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-blender-original colored"
+                                    ></i><span>Blender</span>
+                                </div>
+                                <div class="skill-card">
+                                    <Image
+                                        src="https://cdn.simpleicons.org/blockbench/white"
+                                        width={30}
+                                        height={30}
+                                        alt="BB"
+                                    /><span>Blockbench</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 6. Tools -->
+                        <div class="skill-category">
+                            <h4>Development Tools</h4>
+                            <div class="skill-cards">
+                                <div class="skill-card">
+                                    <i class="devicon-vscode-plain colored"
+                                    ></i><span>VS Code</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i
+                                        class="devicon-visualstudio-plain colored"
+                                    ></i>
+                                    <span>VS 2022</span>
+                                </div>
+                                <div class="skill-card">
+                                    <i class="devicon-intellij-plain colored"
+                                    ></i><span>IntelliJ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION 4: SERVICES -->
+            <section class="screen-section services">
+                <div class="content">
+                    <h2>Services I Offer</h2>
+                    <p class="quote">
+                        "If you’re looking for someone who can handle both the
+                        technical side and the creative side of a project,
+                        you’re in the right place."
+                    </p>
+
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <h4>Full-Stack Development</h4>
+                            <p>
+                                I design and build modern, scalable web
+                                applications.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Web & Identity Design</h4>
+                            <p>
+                                I craft cohesive digital identities and visual
+                                branding.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Video Editing</h4>
+                            <p>
+                                Storytelling and pacing — narrative, gaming, or
+                                socials.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Game Development</h4>
+                            <p>
+                                Interactive experiences from prototypes to
+                                complete projects.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4>PC Building & Setup</h4>
+                            <p>
+                                Hardware selection, OS setup, and optimization.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <h4>Data Analysis</h4>
+                            <p>Clear dashboards and visual insights.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 5: PROJECTS -->
+            <section class="screen-section projects">
+                <div class="content">
+                    <h2>My Projects</h2>
+                    <h3>Featured Work</h3>
+
+                    <div class="projects-grid">
+                        <!-- Project 1 -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img
+                                    src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80"
+                                    alt="Project 1"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h4>Cyber Nexus</h4>
+                                <p>
+                                    A full-stack dashboard for tracking
+                                    real-time server metrics.
+                                </p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>PostgreSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img
+                                    src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=400&q=80"
+                                    alt="Project 2"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h4>Void Wanderer</h4>
+                                <p>
+                                    A 2D atmospheric platformer built for the
+                                    48-hour Game Jam.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                    <span>Aesprite</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img
+                                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80"
+                                    alt="Project 3"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h4>Vivid UI Kit</h4>
+                                <p>
+                                    A comprehensive design system for creative
+                                    desktop apps.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Figma</span>
+                                    <span>Photoshop</span>
+                                    <span>UI Design</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img
+                                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
+                                    alt="Project 4"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h4>Code Snippet Pro</h4>
+                                <p>
+                                    An Astro-based library for developers to
+                                    store snippets.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Astro</span>
+                                    <span>Tailwind</span>
+                                    <span>JS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img
+                                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80"
+                                    alt="Project 5"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h4>Esports Highlight Engine</h4>
+                                <p>
+                                    Automated video editing script for
+                                    high-action gameplay.
+                                </p>
+                                <div class="project-tech">
+                                    <span>Python</span>
+                                    <span>DaVinci</span>
+                                    <span>OBS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6 -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img
+                                    src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80"
+                                    alt="Project 6"
+                                />
+                            </div>
+                            <div class="project-info">
+                                <h4>Atlas Database</h4>
+                                <p>
+                                    Custom MongoDB wrapper for high-performance
+                                    indexing.
+                                </p>
+                                <div class="project-tech">
+                                    <span>MongoDB</span>
+                                    <span>Java</span>
+                                    <span>IntelliJ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6: CONTACT -->
+            <section class="screen-section contact">
+                <div class="content">
+                    <h2>Contact Me</h2>
+                    <form class="contact-form">
+                        <input type="email" placeholder="Your Email" required />
+                        <textarea
+                            placeholder="Write your message here..."
+                            required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- NEW: FOOTER -->
+                <footer class="site-footer">
+                    <button
+                        id="back-to-top"
+                        class="back-to-top"
+                        title="Back to Top"
+                    >
+                        <i class="devicon-astro-plain"></i>
+                    </button>
+
+                    <div class="footer-info">
+                        <p>
+                            &copy; {new Date().getFullYear()} Weaky★. All rights reserved.
+                        </p>
+                    </div>
+
+                    <div class="footer-socials">
+                        <a href="https://github.com/Weakystar0" target="_blank"
+                            ><i class="devicon-github-original"></i></a
+                        >
+                        <a
+                            href="https://steamcommunity.com/id/weakystar/"
+                            target="_blank"
+                            ><img
+                                src="https://cdn.simpleicons.org/steam/white"
+                                width="20"
+                                alt="Steam"
+                            /></a
+                        >
+                        <a href="https://x.com/weakyyyyy" target="_blank"
+                            ><img
+                                src="https://cdn.simpleicons.org/x/white"
+                                width="20"
+                                alt="X"
+                            /></a
+                        >
+                    </div>
+                </footer>
+            </section>
+        </main>
+        <script src="../scripts/scroll.js"></script>
+        <script src="../scripts/tab-title.js"></script>
+        <script src="../scripts/projects.js"></script>
+    </body>
+</html>
