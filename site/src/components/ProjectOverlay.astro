@@ -1,24 +1,54 @@
+---
+
+---
+
 <div id="project-overlay" class="overlay hidden">
     <div class="overlay-content">
         <button id="close-overlay" class="close-btn">&times;</button>
 
         <div class="overlay-body">
-            <div class="overlay-image">
-                <img id="overlay-img" src="" alt="Project Preview" />
-            </div>
+            <!-- CAROUSEL SECTION -->
+            <div class="carousel-container">
+                <div id="carousel-track" class="carousel-track"></div>
 
+                <div class="btn-organizer" id="btn-organizer">
+                    <div class="btn-group" id="btn-group">
+                        <img
+                            src="/img/btn-prev.png"
+                            alt="Previous"
+                            class="carousel-btn prev"
+                            id="prev-btn"
+                        />
+                        <img
+                            src="/img/btn-next.png"
+                            alt="Next"
+                            class="carousel-btn next"
+                            id="next-btn"
+                        />
+                    </div>
+                </div>
+
+                <div id="carousel-dots" class="carousel-dots"></div>
+
+                <img
+                    src="/img/frame.png"
+                    alt="Carousel Frame"
+                    class="carousel-frame"
+                    id="carousel-frame"
+                />
+            </div>
             <div class="overlay-text">
                 <h2 id="overlay-title">Project Title</h2>
                 <div id="overlay-tech" class="project-tech"></div>
                 <hr />
-                <p id="overlay-desc">Detailed description goes here...</p>
+                <p id="overlay-desc">Detailed description...</p>
 
                 <div class="overlay-extra">
                     <h3>Key Features</h3>
-                    <ul id="overlay-features">
-                        <li>Feature A: High performance optimization.</li>
-                        <li>Feature B: Custom user interface design.</li>
-                        <li>Feature C: Scalable backend integration.</li>
+                    <ul>
+                        <li>Performance Optimized</li>
+                        <li>Responsive Design</li>
+                        <li>Modern Tech Stack</li>
                     </ul>
                 </div>
             </div>
@@ -27,6 +57,28 @@
 </div>
 
 <style>
+    .carousel-container {
+        position: relative; /* already exists */
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #333;
+    }
+
+    /* FRAME STYLE */
+    .carousel-frame {
+        position: absolute; /* sit on top */
+        top: 0;
+        left: 0;
+        width: 101%;
+        height: 101%;
+        translate: -0.5% -0.5%; /* center perfectly */
+        pointer-events: none; /* clicks go through to carousel buttons */
+        z-index: 20; /* higher than buttons */
+    }
+
     .overlay {
         position: fixed;
         top: 0;
@@ -42,6 +94,91 @@
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
+    }
+
+    .overlay-body {
+        display: flex;
+        flex-direction: column; /* Stack vertically for better reading with a wide carousel */
+        gap: 2rem;
+    }
+
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9; /* Forces 16:9 Ratio */
+        background: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #333;
+    }
+
+    .carousel-track {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    :global(.carousel-track img) {
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover; /* This handles the cropping */
+    }
+
+    .carousel-btn:hover {
+        filter: brightness(-1);
+    }
+
+    .btn-organizer {
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0;
+        pointer-events: none;
+    }
+
+    /* Button group container */
+    .btn-group {
+        position: absolute;
+        bottom: 0%;
+        right: 1%;
+        z-index: 30;
+        pointer-events: none;
+    }
+
+    /* Buttons as images */
+    .btn-group .carousel-btn {
+        width: auto;
+        height: auto;
+        cursor: pointer;
+        pointer-events: auto;
+        object-fit: contain;
+    }
+
+    .carousel-dots {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    :global(.c-dot) {
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    :global(.c-dot.active) {
+        background: #6366f1;
+        transform: scale(1.2);
+    }
+
+    .overlay-text {
+        padding: 0 1rem;
     }
 
     .overlay.active {
