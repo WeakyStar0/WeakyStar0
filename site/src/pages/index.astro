@@ -2,6 +2,7 @@
 import { Image } from "astro/components";
 import "../styles/global.css";
 import ProjectOverlay from "../components/ProjectOverlay.astro";
+import fillBlackShort from "../../public/img/fill-black-short.png";
 
 const pageTitle = "Weaky";
 ---
@@ -27,13 +28,26 @@ const pageTitle = "Weaky";
     </head>
     <body>
         <ProjectOverlay />
+        <!-- NAVIGATION INDICATORS -->
         <div class="nav-indicators">
-            <div class="dot active" data-index="0"></div>
-            <div class="dot" data-index="1"></div>
-            <div class="dot" data-index="2"></div>
-            <div class="dot" data-index="3"></div>
-            <div class="dot" data-index="4"></div>
-            <div class="dot" data-index="5"></div>
+            <div class="dot active" data-index="0">
+                <span class="dot-label">Home</span>
+            </div>
+            <div class="dot" data-index="1">
+                <span class="dot-label">About</span>
+            </div>
+            <div class="dot" data-index="2">
+                <span class="dot-label">Skills</span>
+            </div>
+            <div class="dot" data-index="3">
+                <span class="dot-label">Services</span>
+            </div>
+            <div class="dot" data-index="4">
+                <span class="dot-label">Projects</span>
+            </div>
+            <div class="dot" data-index="5">
+                <span class="dot-label">Contact</span>
+            </div>
         </div>
 
         <main class="snap-container">
@@ -294,7 +308,11 @@ const pageTitle = "Weaky";
                         <!-- Project 1 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,https://images.unsplash.com/photo-1555066931-4365d14bab8c,https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
+                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
+                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-desc="Cyber Nexus began as a small experiment in real-time data visualization but grew into a massive enterprise dashboard. The goal was to visualize server metrics with less than 50ms latency. We utilized WebSockets for the live feed and optimized React rendering to handle thousands of data points per second without lag."
+                            data-features="Real-time WebSocket Data Feed|Custom D3.js Charts|Role-Based Access Control (RBAC)|Dark/Light Mode Toggle"
                         >
                             <div class="project-thumb">
                                 <img
@@ -319,7 +337,9 @@ const pageTitle = "Weaky";
                         <!-- Project 2 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,https://images.unsplash.com/photo-1555066931-4365d14bab8c,https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
+                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
+                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
                         >
                             <div class="project-thumb">
                                 <img
@@ -344,7 +364,9 @@ const pageTitle = "Weaky";
                         <!-- Project 3 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,https://images.unsplash.com/photo-1555066931-4365d14bab8c,https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
+                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
+                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
                         >
                             <div class="project-thumb">
                                 <img
@@ -369,7 +391,9 @@ const pageTitle = "Weaky";
                         <!-- Project 4 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,https://images.unsplash.com/photo-1555066931-4365d14bab8c,https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
+                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
+                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
                         >
                             <div class="project-thumb">
                                 <img
@@ -394,7 +418,9 @@ const pageTitle = "Weaky";
                         <!-- Project 5 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,https://images.unsplash.com/photo-1555066931-4365d14bab8c,https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
+                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
+                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
                         >
                             <div class="project-thumb">
                                 <img
@@ -419,7 +445,9 @@ const pageTitle = "Weaky";
                         <!-- Project 6 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,https://images.unsplash.com/photo-1555066931-4365d14bab8c,https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
+                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
+                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
                         >
                             <div class="project-thumb">
                                 <img
@@ -456,6 +484,12 @@ const pageTitle = "Weaky";
                         <button type="submit">Send Message</button>
                     </form>
                 </div>
+
+                <Image
+                    src={fillBlackShort}
+                    class="fillBlackShort"
+                    alt="fillBlackShort"
+                />
 
                 <!-- NEW: FOOTER -->
                 <footer class="site-footer">

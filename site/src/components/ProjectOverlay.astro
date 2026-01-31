@@ -1,5 +1,5 @@
 ---
-
+/* src/components/ProjectOverlay.astro */
 ---
 
 <div id="project-overlay" class="overlay hidden">
@@ -9,34 +9,36 @@
         <div class="overlay-body">
             <!-- CAROUSEL SECTION -->
             <div class="carousel-container">
-                <div id="carousel-track" class="carousel-track"></div>
-
-                <div class="btn-organizer" id="btn-organizer">
-                    <div class="btn-group" id="btn-group">
-                        <img
-                            src="/img/btn-prev.png"
-                            alt="Previous"
-                            class="carousel-btn prev"
-                            id="prev-btn"
-                        />
-                        <img
-                            src="/img/btn-next.png"
-                            alt="Next"
-                            class="carousel-btn next"
-                            id="next-btn"
-                        />
-                    </div>
+                <div id="carousel-track" class="carousel-track">
+                    <!-- Images injected via JS -->
                 </div>
 
-                <div id="carousel-dots" class="carousel-dots"></div>
+                <!-- Standard Side Buttons -->
+                <button class="carousel-btn prev" id="prev-btn">&#10094;</button
+                >
+                <button class="carousel-btn next" id="next-btn">&#10095;</button
+                >
 
-                <img
-                    src="/img/frame.png"
-                    alt="Carousel Frame"
-                    class="carousel-frame"
-                    id="carousel-frame"
-                />
+                <!-- Dots -->
+                <div class="marquee-strip">
+                    <div class="marquee-content">
+                        <!-- We repeat the text to ensure the loop is smooth -->
+                        <span
+                            >WEAKY &nbsp;&bull;&nbsp; PROJECT SHOWCASE
+                            &nbsp;&bull;&nbsp; WEAKY &nbsp;&bull;&nbsp; PROJECT
+                            SHOWCASE &nbsp;&bull;&nbsp;</span
+                        >
+                        <span
+                            >WEAKY &nbsp;&bull;&nbsp; PROJECT SHOWCASE
+                            &nbsp;&bull;&nbsp; WEAKY &nbsp;&bull;&nbsp; PROJECT
+                            SHOWCASE &nbsp;&bull;&nbsp;</span
+                        >
+                    </div>
+                </div>
             </div>
+
+            <div id="carousel-dots" class="carousel-dots"></div>
+
             <div class="overlay-text">
                 <h2 id="overlay-title">Project Title</h2>
                 <div id="overlay-tech" class="project-tech"></div>
@@ -45,10 +47,8 @@
 
                 <div class="overlay-extra">
                     <h3>Key Features</h3>
-                    <ul>
-                        <li>Performance Optimized</li>
-                        <li>Responsive Design</li>
-                        <li>Modern Tech Stack</li>
+                    <ul id="overlay-features-list">
+                        <!-- toue -->
                     </ul>
                 </div>
             </div>
@@ -57,28 +57,6 @@
 </div>
 
 <style>
-    .carousel-container {
-        position: relative; /* already exists */
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        background: #111;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid #333;
-    }
-
-    /* FRAME STYLE */
-    .carousel-frame {
-        position: absolute; /* sit on top */
-        top: 0;
-        left: 0;
-        width: 101%;
-        height: 101%;
-        translate: -0.5% -0.5%; /* center perfectly */
-        pointer-events: none; /* clicks go through to carousel buttons */
-        z-index: 20; /* higher than buttons */
-    }
-
     .overlay {
         position: fixed;
         top: 0;
@@ -86,7 +64,7 @@
         width: 100%;
         height: 100%;
         background: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(8px); /* Blur background */
+        backdrop-filter: blur(8px);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -94,91 +72,6 @@
         opacity: 0;
         pointer-events: none;
         transition: opacity 0.3s ease;
-    }
-
-    .overlay-body {
-        display: flex;
-        flex-direction: column; /* Stack vertically for better reading with a wide carousel */
-        gap: 2rem;
-    }
-
-    .carousel-container {
-        position: relative;
-        width: 100%;
-        aspect-ratio: 16 / 9; /* Forces 16:9 Ratio */
-        background: #111;
-        border-radius: 12px;
-        overflow: hidden;
-        border: 1px solid #333;
-    }
-
-    .carousel-track {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    :global(.carousel-track img) {
-        min-width: 100%;
-        height: 100%;
-        object-fit: cover; /* This handles the cropping */
-    }
-
-    .carousel-btn:hover {
-        filter: brightness(-1);
-    }
-
-    .btn-organizer {
-        width: 100%;
-        height: 20%;
-        position: absolute;
-        bottom: 0;
-        pointer-events: none;
-    }
-
-    /* Button group container */
-    .btn-group {
-        position: absolute;
-        bottom: 0%;
-        right: 1%;
-        z-index: 30;
-        pointer-events: none;
-    }
-
-    /* Buttons as images */
-    .btn-group .carousel-btn {
-        width: auto;
-        height: auto;
-        cursor: pointer;
-        pointer-events: auto;
-        object-fit: contain;
-    }
-
-    .carousel-dots {
-        position: absolute;
-        bottom: 1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        gap: 0.5rem;
-    }
-
-    :global(.c-dot) {
-        width: 10px;
-        height: 10px;
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    :global(.c-dot.active) {
-        background: #6366f1;
-        transform: scale(1.2);
-    }
-
-    .overlay-text {
-        padding: 0 1rem;
     }
 
     .overlay.active {
@@ -191,14 +84,11 @@
         width: 80%;
         height: 80%;
         border-radius: 20px;
-        border: 1px solid #333;
         position: relative;
-        overflow-y: auto; /* Internal scrolling */
+        overflow-y: auto;
         padding: 3rem;
         box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     }
-
-    /* Custom scrollbar for overlay */
     .overlay-content::-webkit-scrollbar {
         width: 8px;
     }
@@ -217,32 +107,154 @@
         font-size: 2.5rem;
         cursor: pointer;
         line-height: 1;
+        z-index: 50;
     }
 
     .overlay-body {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
     }
 
-    .overlay-image img {
-        width: 100%;
-        border-radius: 10px;
-        border: 1px solid #333;
+    /* --- CAROUSEL STYLES --- */
+    .carousel-container {
+        margin: 0 auto;
+        position: relative;
+        width: 70%;
+        aspect-ratio: 16 / 9;
+        background: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        cursor: grab;
+        user-select: none;
     }
 
+    .carousel-container:active {
+        cursor: grabbing;
+    }
+
+    .carousel-track {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        /* Transition is handled in JS now for dragging */
+    }
+
+    :global(.carousel-track img) {
+        min-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none; /* Prevents browser trying to "drag and drop" the image itself */
+    }
+
+    /* Standard Side Buttons */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        z-index: 10;
+        transition: background 0.3s;
+    }
+
+    .carousel-btn:hover {
+        background: #6366f1;
+    }
+    .prev {
+        left: 0;
+        border-radius: 0 5px 5px 0;
+    }
+    .next {
+        right: 0;
+        border-radius: 5px 0 0 5px;
+    }
+
+    /* Dots */
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    :global(.c-dot) {
+        width: 10px;
+        height: 10px;
+        background: #444;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    :global(.c-dot.active) {
+        background: #6366f1;
+        transform: scale(1.3);
+    }
+
+    .marquee-strip {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(4px);
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        pointer-events: none;
+    }
+
+    .marquee-content {
+        display: flex;
+        white-space: nowrap;
+        animation: scroll-left 15s linear infinite;
+    }
+
+    .marquee-content span {
+        color: #a5b4fc;
+        font-size: 0.75rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-right: 2rem;
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .carousel-btn {
+        z-index: 10;
+    }
+
+    .overlay-text {
+        padding: 0 1rem;
+    }
     .overlay-text h2 {
         font-size: 2.5rem;
         color: #a5b4fc;
         margin-bottom: 1rem;
     }
-
     hr {
         border: 0;
         border-top: 1px solid #333;
         margin: 1.5rem 0;
     }
-
     .overlay-text p {
         color: #ccc;
         line-height: 1.8;
@@ -264,17 +276,16 @@
         margin-bottom: 0.5rem;
     }
 
-    @media (max-width: 900px) {
-        .overlay-body {
-            grid-template-columns: 1fr;
-        }
+    @media (max-width: 1000px) {
         .overlay-content {
             width: 95%;
             height: 95%;
             padding: 1.5rem;
         }
+        .carousel-container {
+            width: 100%;
+        }
     }
-
     .hidden {
         display: none;
     }

@@ -1,27 +1,21 @@
-// src/scripts/tab-title.js
+// this just some cool animation in the tab title feel free to use it :D
 
-const originalTitle = "Weaky";
+const originalTitle = "Weaky"; // replace with your desired title
 let index = originalTitle.length;
 let isRemoving = true;
 let delay = 300; 
 
 function animateTitle() {
-    // 1. Update the title
     document.title = originalTitle.substring(0, index);
 
-    // 2. Logic to change the index
     if (isRemoving) {
         index--;
-        
-        // FIX: Stop at 1 instead of 0
-        // This ensures the "W" stays visible so the URL doesn't pop up
         if (index <= 1) {
             isRemoving = false;
         }
     } else {
         index++;
         
-        // If we reach the full name, start removing again
         if (index >= originalTitle.length) {
             isRemoving = true;
         }
