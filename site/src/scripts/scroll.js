@@ -40,7 +40,7 @@ if (container) {
 
             setTimeout(() => {
                 isScrolling = false;
-            }, 1000);
+            }, 300);
         }
     }, { passive: false });
 
@@ -77,7 +77,7 @@ if (container) {
 
                 setTimeout(() => {
                     isScrolling = false;
-                }, 1000);
+                }, 300);
             }
         });
     });
