@@ -1,19 +1,12 @@
----
-/* src/components/ProjectOverlay.astro */
----
-
 <div id="project-overlay" class="overlay hidden">
     <div class="overlay-content">
         <button id="close-overlay" class="close-btn">&times;</button>
 
         <div class="overlay-body">
-            <!-- CAROUSEL SECTION -->
+            <!-- CAROUSEL -->
             <div class="carousel-container">
-                <div id="carousel-track" class="carousel-track">
-                    <!-- Images injected via JS -->
-                </div>
+                <div id="carousel-track" class="carousel-track"></div>
 
-                <!-- Standard Side Buttons -->
                 <button class="carousel-btn prev" id="prev-btn">&#10094;</button
                 >
                 <button class="carousel-btn next" id="next-btn">&#10095;</button
@@ -22,7 +15,16 @@
                 <!-- Dots -->
                 <div class="marquee-strip">
                     <div class="marquee-content">
-                        <!-- We repeat the text to ensure the loop is smooth -->
+                        <span
+                            >WEAKY &nbsp;&bull;&nbsp; PROJECT SHOWCASE
+                            &nbsp;&bull;&nbsp; WEAKY &nbsp;&bull;&nbsp; PROJECT
+                            SHOWCASE &nbsp;&bull;&nbsp;</span
+                        >
+                        <span
+                            >WEAKY &nbsp;&bull;&nbsp; PROJECT SHOWCASE
+                            &nbsp;&bull;&nbsp; WEAKY &nbsp;&bull;&nbsp; PROJECT
+                            SHOWCASE &nbsp;&bull;&nbsp;</span
+                        >
                         <span
                             >WEAKY &nbsp;&bull;&nbsp; PROJECT SHOWCASE
                             &nbsp;&bull;&nbsp; WEAKY &nbsp;&bull;&nbsp; PROJECT
@@ -80,7 +82,11 @@
     }
 
     .overlay-content {
-        background: #1e1e2e;
+        background: url(/img/site_bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% 100%;
+        background-attachment: local;
         width: 80%;
         height: 80%;
         border-radius: 20px;
@@ -116,7 +122,6 @@
         gap: 2rem;
     }
 
-    /* --- CAROUSEL STYLES --- */
     .carousel-container {
         margin: 0 auto;
         position: relative;
@@ -137,17 +142,15 @@
         display: flex;
         width: 100%;
         height: 100%;
-        /* Transition is handled in JS now for dragging */
     }
 
     :global(.carousel-track img) {
         min-width: 100%;
         height: 100%;
         object-fit: cover;
-        pointer-events: none; /* Prevents browser trying to "drag and drop" the image itself */
+        pointer-events: none;
     }
 
-    /* Standard Side Buttons */
     .carousel-btn {
         position: absolute;
         top: 50%;
