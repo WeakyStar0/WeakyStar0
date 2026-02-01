@@ -28,6 +28,13 @@ const pageTitle = "Weaky";
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Nova+Flat&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <ProjectOverlay />
@@ -67,15 +74,39 @@ const pageTitle = "Weaky";
 
             <!-- SECTION 2: ABOUT ME -->
             <section class="screen-section about">
-                <div class="content">
-                    <h2>About Me</h2>
-                    <p class="summary">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
-                    </p>
+                <div class="content-wrapper">
+                    <!-- Texto -->
+                    <div class="about-text glass-card">
+                        <h2>About Me</h2>
+                        <p>
+                            I’m Marcelo Dias, a developer based in Portugal.
+                            <br />
+                            Over the last 3 years, I’ve focused on bridging the gap
+                            between functional code and engaging design.
+                            <br /><br />
+                            I don’t just build websites... I craft interactive experiences,
+                            whether that’s a web application or an immersive game.
+                            <br /><br />
+                            I am currently open to new challenges where I can push
+                            the boundaries of what's possible on the web.
+                        </p>
+                    </div>
+
+                    <!-- Stats / Info vertical -->
+                    <div class="about-stats">
+                        <div class="stat glass-card">
+                            <strong>3+ Years</strong>
+                            <span>Experience</span>
+                        </div>
+                        <div class="stat glass-card">
+                            <strong>Ongoing Projects</strong>
+                            <span>Always Building</span>
+                        </div>
+                        <div class="stat glass-card">
+                            <strong>Open to Work</strong>
+                            <span>Opportunities</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -248,6 +279,7 @@ const pageTitle = "Weaky";
                     </div>
                 </div>
             </section>
+
             <!-- SECTION 4: SERVICES -->
             <section class="screen-section services">
                 <div class="content">
@@ -276,7 +308,7 @@ const pageTitle = "Weaky";
                         <div class="service-item">
                             <h4>Video Editing</h4>
                             <p>
-                                Storytelling and pacing — narrative, gaming, or
+                                Storytelling, pacing, narrative, gaming, or
                                 socials.
                             </p>
                         </div>
@@ -311,28 +343,30 @@ const pageTitle = "Weaky";
                         <!-- Project 1 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
-                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
-                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
-                            data-desc="Cyber Nexus began as a small experiment in real-time data visualization but grew into a massive enterprise dashboard. The goal was to visualize server metrics with less than 50ms latency. We utilized WebSockets for the live feed and optimized React rendering to handle thousands of data points per second without lag."
-                            data-features="Real-time WebSocket Data Feed|Custom D3.js Charts|Role-Based Access Control (RBAC)|Dark/Light Mode Toggle"
+                            data-images="https://img.itch.zone/aW1hZ2UvMzY1NjQ2Ny8yMTg0MjA1MC5wbmc=/original/%2ByPqED.png,
+                            https://img.itch.zone/aW1hZ2UvMzY1NjQ2Ny8yMTgzNzcwNS5wbmc=/original/223nHE.png,
+                            https://img.itch.zone/aW1hZ2UvMzY1NjQ2Ny8yMTgzODI3OS5wbmc=/original/d3CMAw.png,
+                            https://img.itch.zone/aW1hZ2UvMzY1NjQ2Ny8yMTgzNzc2NC5wbmc=/original/Fl%2Fssu.png,
+                            https://img.itch.zone/aW1nLzIxODM4NzQ2LmdpZg==/original/KAAd79.gif"
+                            data-desc="Jogo de aventura e plataforma ambientado na mente surreal do Dr. Silverstein, um cientista excêntrico cuja explosão laboratorial dá origem ao Crazy Duck — uma entidade bizarra que pretende dominar o mundo com um exército de patos mecânicos. O jogador explora cenários caóticos e distorcidos, recolhendo fragmentos da memória do Dr. Silverstein enquanto enfrenta inimigos absurdos e supera desafios de plataforma com movimentos precisos e mecânicas únicas. O jogo combina narrativa humorística e estilizada com jogabilidade fluida, oferecendo uma experiência imersiva e visualmente marcante."
+                            data-features="Exploração surreal|Recolha de fragmentos|Combate rápido|Salto e mobilidade"
                         >
                             <div class="project-thumb">
                                 <img
-                                    src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=400&q=80"
-                                    alt="Project 1"
+                                    src="https://imgur.com/8kuUUXM.png"
+                                    alt="CrazyDuck"
                                 />
                             </div>
                             <div class="project-info">
-                                <h4>Cyber Nexus</h4>
+                                <h4>The Delusion of Crazy Duck</h4>
                                 <p>
-                                    A full-stack dashboard for tracking
-                                    real-time server metrics.
+                                    A surreal platformer game with unique
+                                    mechanics.
                                 </p>
                                 <div class="project-tech">
-                                    <span>React</span>
-                                    <span>Node.js</span>
-                                    <span>PostgreSQL</span>
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                    <span>Blender</span>
                                 </div>
                             </div>
                         </div>
@@ -343,23 +377,24 @@ const pageTitle = "Weaky";
                             data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
                             https://images.unsplash.com/photo-1555066931-4365d14bab8c,
                             https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-desc="Weekoo is a Discord App that blends economy, RPG mechanics, and casino-style gameplay into a single, engaging platform. Designed to increase server activity and retention, it allows users to earn XP, level up, collect rare items, and participate in interactive social features. Weekoo also includes a dynamic economy with trading and a robust shop system, alongside moderation and logging tools, providing server administrators with a solution for gamification, entertainment, and community management."
+                            data-features="Casino & economy|RPG progression|Shop & marketplace|Moderation & logging|Social features"
                         >
                             <div class="project-thumb">
                                 <img
-                                    src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=400&q=80"
-                                    alt="Project 2"
+                                    src="https://imgur.com/7NJIFke.png"
+                                    alt="Weekoo - My Discord App"
                                 />
                             </div>
                             <div class="project-info">
-                                <h4>Void Wanderer</h4>
+                                <h4>Weekoo - My Discord App</h4>
                                 <p>
-                                    A 2D atmospheric platformer built for the
-                                    48-hour Game Jam.
+                                    A Discord App with RPG mechanics and
+                                    moderation.
                                 </p>
                                 <div class="project-tech">
-                                    <span>Unity</span>
-                                    <span>C#</span>
-                                    <span>Aesprite</span>
+                                    <span>JS</span>
+                                    <span>Discord API</span>
                                 </div>
                             </div>
                         </div>
@@ -367,26 +402,29 @@ const pageTitle = "Weaky";
                         <!-- Project 3 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
-                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
-                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://imgur.com/mTxx524.png,
+                            https://imgur.com/OCdmejx.png,
+                            https://imgur.com/Ir2ynhi.png,
+                            https://imgur.com/RkAFh85.png,
+                            https://imgur.com/IWjpCzM.png"
+                            data-desc="5 Nights Without Panados is a small survival horror game where the player must endure from midnight to 6 AM against a variety of unpredictable threats. Using a security camera system, players monitor the environment to detect dangers while managing limited resources such as flashlight energy. The game features unique mechanics for each enemy, requiring players to learn patterns and react strategically to survive. Immersive 3D audio cues, interactive environment elements, and dynamic challenges create a tense and engaging gameplay experience."
+                            data-features="Camera monitoring|Resource management|Unique enemy mechanics|3D audio|Interactive environment"
                         >
                             <div class="project-thumb">
                                 <img
-                                    src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80"
-                                    alt="Project 3"
+                                    src="https://imgur.com/mTxx524.png"
+                                    alt="5 Nights Without Panados (🇵🇹)"
                                 />
                             </div>
                             <div class="project-info">
-                                <h4>Vivid UI Kit</h4>
+                                <h4>5 Nights Without Panados (🇵🇹)</h4>
                                 <p>
-                                    A comprehensive design system for creative
-                                    desktop apps.
+                                    A small survival horror game with unique
+                                    enemy mechanics and immersive audio.
                                 </p>
                                 <div class="project-tech">
-                                    <span>Figma</span>
-                                    <span>Photoshop</span>
-                                    <span>UI Design</span>
+                                    <span>Unity</span>
+                                    <span>C#</span>
                                 </div>
                             </div>
                         </div>
@@ -394,26 +432,29 @@ const pageTitle = "Weaky";
                         <!-- Project 4 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
-                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
-                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://imgur.com/mpX5yrm.png,
+                            https://imgur.com/Vy5J0Ot.png,
+                            https://imgur.com/yBggIDW.png"
+                            data-desc="Viriatos Scouting is a mobile and backoffice application designed for efficient athlete management. It allows clubs and coaching staff to add, remove, and organize athletes, assign personalized tasks, and track individual progress. The platform also provides a detailed overview of clubs and age categories, enabling optimized talent development and streamlined internal organization. The system emphasizes scalability, intuitive user experience, and integrated features that simplify sports management."
+                            data-features="Athlete management|Task assignment|Club & age overview|Mobile & backoffice|Intuitive interface"
                         >
                             <div class="project-thumb">
                                 <img
-                                    src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=400&q=80"
-                                    alt="Project 4"
+                                    src="https://imgur.com/fDnWcjT.png"
+                                    alt="Viriatos Scouting"
                                 />
                             </div>
                             <div class="project-info">
-                                <h4>Code Snippet Pro</h4>
+                                <h4>Viriatos Scouting</h4>
                                 <p>
-                                    An Astro-based library for developers to
-                                    store snippets.
+                                    Athlete management app for clubs and
+                                    coaches.
                                 </p>
                                 <div class="project-tech">
-                                    <span>Astro</span>
-                                    <span>Tailwind</span>
+                                    <span>React</span>
                                     <span>JS</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
                                 </div>
                             </div>
                         </div>
@@ -421,26 +462,31 @@ const pageTitle = "Weaky";
                         <!-- Project 5 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
-                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
-                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://imgur.com/hREt0Ho.png,
+                            https://imgur.com/QXIvf1x.png,
+                            https://imgur.com/W7aSzop.png,
+                            https://imgur.com/gIYw3U6.png,
+                            https://i.imgur.com/EfgG23Y.gif"
+                            data-desc="The ESTGV Career Platform is a web-based application designed to connect students and alumni with internship and job opportunities. The system supports multiple user roles, including students, companies, managers, and administrators, each with dedicated dashboards tailored to their needs. Students can explore internship and job proposals, manage their profiles by adding technical and soft skills, and receive recommended opportunities based on skill matching. Companies can publish proposals and interact with interested candidates, while administrators and managers oversee companies, users, and platform content. The platform focuses on usability, structured role management, and efficient career matchmaking."
+                            data-features="Multi-role dashboards|Internship & job listings|Skill-based recommendations|Company & proposal management|Student interest tracking"
                         >
                             <div class="project-thumb">
                                 <img
-                                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=400&q=80"
-                                    alt="Project 5"
+                                    src="https://imgur.com/hREt0Ho.png"
+                                    alt="ESTGV Career Platform"
                                 />
                             </div>
                             <div class="project-info">
-                                <h4>Esports Highlight Engine</h4>
+                                <h4>ESTGV Career Platform</h4>
                                 <p>
-                                    Automated video editing script for
-                                    high-action gameplay.
+                                    A career platform connecting students and
+                                    companies.
                                 </p>
                                 <div class="project-tech">
-                                    <span>Python</span>
-                                    <span>DaVinci</span>
-                                    <span>OBS</span>
+                                    <span>React</span>
+                                    <span>JS</span>
+                                    <span>Node.js</span>
+                                    <span>PostgreSQL</span>
                                 </div>
                             </div>
                         </div>
@@ -448,26 +494,21 @@ const pageTitle = "Weaky";
                         <!-- Project 6 -->
                         <div
                             class="project-card"
-                            data-images="https://images.unsplash.com/photo-1550745165-9bc0b252726f,
-                            https://images.unsplash.com/photo-1555066931-4365d14bab8c,
-                            https://images.unsplash.com/photo-1542751371-adc38448a05e"
+                            data-images="https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg"
                         >
                             <div class="project-thumb">
                                 <img
-                                    src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=400&q=80"
-                                    alt="Project 6"
+                                    src="https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg"
+                                    alt="Coming Soon"
                                 />
                             </div>
                             <div class="project-info">
-                                <h4>Atlas Database</h4>
-                                <p>
-                                    Custom MongoDB wrapper for high-performance
-                                    indexing.
-                                </p>
+                                <h4>Coming Soon</h4>
+                                <p>Coming Soon</p>
                                 <div class="project-tech">
-                                    <span>MongoDB</span>
-                                    <span>Java</span>
-                                    <span>IntelliJ</span>
+                                    <span>:)</span>
+                                    <span>:D</span>
+                                    <span>:o</span>
                                 </div>
                             </div>
                         </div>

@@ -126,13 +126,17 @@
         margin: 0 auto;
         position: relative;
         width: 70%;
-        aspect-ratio: 16 / 9;
+        aspect-ratio: 17.7 / 9;
         background: #111;
         border-radius: 12px;
         overflow: hidden;
         cursor: grab;
         user-select: none;
     }
+
+.carousel-container img {
+        border-radius: 12px;
+}
 
     .carousel-container:active {
         cursor: grabbing;
@@ -149,6 +153,7 @@
         height: 100%;
         object-fit: cover;
         pointer-events: none;
+        border-radius: 12px;
     }
 
     .carousel-btn {
