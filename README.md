@@ -9,7 +9,6 @@
 <p align="center">
    <b>Currently Orbiting:</b> Personal game projects and custom dev tools.<br>
    <b>Looking for Crew:</b> Open to collaborating on creative coding and game dev indie projects.<br>
-   <b>The AI Frontier:</b> Experimenting with prompt engineering and training small neural nets.
 </p>
 
 <h3 align="center">📡 Transmission</h3>
