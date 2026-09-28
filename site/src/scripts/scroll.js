@@ -53,9 +53,11 @@ if (container) {
             if (entry.isIntersecting) {
                 const index = Array.from(sections).indexOf(entry.target);
                 currentIndex = index;
-                
+
                 dots.forEach(d => d.classList.remove('active'));
                 if (dots[index]) dots[index].classList.add('active');
+
+                entry.target.classList.add('in-view');
             }
         });
     }, observerOptions);
